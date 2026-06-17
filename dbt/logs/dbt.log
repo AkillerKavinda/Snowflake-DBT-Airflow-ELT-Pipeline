@@ -1,0 +1,74 @@
+[0m15:56:45.723627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027C61268A40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027C5D920BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027C60D8F1A0>]}
+
+
+============================== 15:56:45.729887 | 00d0cde0-f01a-423b-8606-ee5e2df9054f ==============================
+[0m15:56:45.729887 [info ] [MainThread]: Running with dbt=1.11.11
+[0m15:56:45.729887 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\kavin\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init tpch_analytics', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m15:56:46.199459 [debug] [MainThread]: Starter project path: C:\Users\kavin\Desktop\Snowflake-DBT-Airflow-ELT-Pipeline\.venv\Lib\site-packages\dbt\include\starter_project
+[0m15:56:46.230594 [info ] [MainThread]: 
+Your new dbt project "tpch_analytics" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:56:46.230594 [info ] [MainThread]: Setting up your profile.
+[0m15:56:55.257668 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m15:56:55.258665 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m15:56:55.258665 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m16:07:23.904741 [info ] [MainThread]: Profile tpch_analytics written to C:\Users\kavin\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:07:24.021161 [debug] [MainThread]: Command `dbt init` succeeded at 16:07:24.016175 after 638.51 seconds
+[0m16:07:24.029440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027C614E9340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027C63C04E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027C62AC3590>]}
+[0m16:07:24.046600 [debug] [MainThread]: Flushing usage events
+[0m16:07:26.225102 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:07:52.964611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B83424C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018BFFC04A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B84418E30>]}
+
+
+============================== 16:07:52.972987 | fae83c0b-4695-4c4a-9803-028308e81e60 ==============================
+[0m16:07:52.972987 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:07:52.975307 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\kavin\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m16:07:53.021032 [info ] [MainThread]: dbt version: 1.11.11
+[0m16:07:53.021032 [info ] [MainThread]: python version: 3.12.5
+[0m16:07:53.022080 [info ] [MainThread]: python path: C:\Users\kavin\AppData\Local\Programs\Python\Python312\python.exe
+[0m16:07:53.024148 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m16:08:00.262858 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m16:08:00.264923 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m16:08:00.266437 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m16:08:06.646097 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m16:08:06.647019 [info ] [MainThread]: Using profiles dir at C:\Users\kavin\.dbt
+[0m16:08:06.647349 [info ] [MainThread]: Using profiles.yml file at C:\Users\kavin\.dbt\profiles.yml
+[0m16:08:06.647349 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\kavin\Desktop\Snowflake-DBT-Airflow-ELT-Pipeline\dbt\dbt_project.yml
+[0m16:08:06.647349 [info ] [MainThread]: Configuration:
+[0m16:08:06.647349 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m16:08:06.650196 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:08:06.650196 [info ] [MainThread]: Required dependencies:
+[0m16:08:06.652203 [debug] [MainThread]: Executing "git --help"
+[0m16:08:06.717121 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:08:06.719081 [debug] [MainThread]: STDERR: "b''"
+[0m16:08:06.719081 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:08:06.719081 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m16:08:06.719081 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:08:06.719081 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "tpch_analytics", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m16:08:06.719081 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\kavin\Desktop\Snowflake-DBT-Airflow-ELT-Pipeline\dbt\dbt_project.yml> not found
+
+[0m16:08:06.722750 [debug] [MainThread]: Command `dbt debug` failed at 16:08:06.722750 after 14.04 seconds
+[0m16:08:06.722750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018BFFAB2750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B973A38F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B97BE4BC0>]}
+[0m16:08:06.722750 [debug] [MainThread]: Flushing usage events
+[0m16:08:08.504924 [debug] [MainThread]: An error was encountered while trying to flush usage events

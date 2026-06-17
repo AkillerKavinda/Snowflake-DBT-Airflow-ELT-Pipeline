@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: tpch
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+    tables:
+      - name: ORDERS
+        description: Raw orders table from Snowflake TPCH sample data.
+        columns:
+          - name: O_ORDERKEY
+            description: Unique identifier for each order.
+            tests:
+              - unique
+              - not_null
+
+      - name: LINEITEM
+        description: Raw line items table from Snowflake TPCH sample data.
+        columns:
+          - name: L_ORDERKEY
+            description: Foreign key that links each line item to an order.
+            tests:
+              - not_null

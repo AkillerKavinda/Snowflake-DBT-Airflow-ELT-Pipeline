@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: fact_orders
+    description: One row per order with order details and summarized revenue metrics.
+    columns:
+      - name: order_id
+        description: Unique identifier for each order.
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        description: Customer who placed the order.
+        tests:
+          - not_null
+
+      - name: net_revenue
+        description: Revenue after discount.
+        tests:
+          - not_null
+
+      - name: order_date
+        description: Date when the order was placed.
+        tests:
+          - not_null
