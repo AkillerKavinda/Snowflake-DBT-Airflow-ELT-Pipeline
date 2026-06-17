@@ -18,7 +18,7 @@ The pipeline transforms raw TPCH data through staging, intermediate, and mart la
 
 ---
 
-## Architecture
+## Airflow Orchestration
 
 ![Airflow DAG](images/airflow.png)
 
