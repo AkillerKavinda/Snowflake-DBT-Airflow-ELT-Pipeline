@@ -7,4 +7,23 @@ wheels/
 *.egg-info
 
 # Virtual environments
-.venv
+.venv/
+venv/
+
+# Environment / secrets
+.env
+profiles.yml
+airflow/include/.dbt/
+
+# dbt generated files
+dbt/tpch_analytics/target/
+dbt/tpch_analytics/logs/
+dbt/tpch_analytics/dbt_packages/
+
+# Airflow generated files
+airflow/logs/
+airflow/.astro/
+airflow/include/.dbt/
+
+# Logs
+*.log
