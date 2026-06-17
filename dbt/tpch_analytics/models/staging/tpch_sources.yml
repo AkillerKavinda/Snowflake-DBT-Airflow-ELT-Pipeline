@@ -21,3 +21,12 @@ sources:
             description: Foreign key that links each line item to an order.
             tests:
               - not_null
+              
+      - name: CUSTOMER
+        description: Raw customer table from Snowflake TPCH sample data.
+        columns:
+          - name: C_CUSTKEY
+            description: Unique identifier for each customer.
+            tests:
+              - unique
+              - not_null
